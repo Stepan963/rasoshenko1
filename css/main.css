@@ -1,0 +1,224 @@
+body {
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.header {
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 60px;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.logo {
+
+}
+.header__wrapper{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.header__offer {
+    width: 520px;
+    margin-top: 102px;
+}
+.header__title span{
+    font-size: 59px;
+}
+.header__title {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+}
+.header__subtitle {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    margin-top: 33px;
+    margin-bottom: 36px;
+
+}
+.btn {
+    color: #2e2a1b;
+    text-decoration: none;
+    background-color: #ffd429;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    padding: 18px 0;
+    text-align: center;
+    display: block;
+    width: 222px;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    background-color: #ffcd05;
+}
+.header__pic {
+
+}
+
+.feature {
+    padding-top: 100px;
+    padding-bottom: 115px;
+}
+.section-title {
+    color: #2e2a1b;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0;
+}
+.item {
+    background: url(../img/icon1.png) no-repeat center top;
+    padding-top: 85px;
+    width: 300px;
+    text-align: center;
+}
+.item-palm {
+    background: url(../img/icon2.png) no-repeat center top;
+    width: 280px; 
+}
+.item-rocket{
+    background: url(../img/icon3.png) no-repeat center top;
+    width: 310px;
+}
+.list__benefit {
+
+}
+.list__text {
+    margin-top: 10px;
+    line-height: 1.6em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ticket-form {
+    background-color: #ecf2f8;
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+.form {
+    max-width: 343px;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+
+.input {
+    display: block;
+    padding: 13px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #c2c2c2;
+}
+.small-screen {
+    display: none;
+}
+.form__btn {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 55px 0;
+    background-color: #164d7a;
+}
+.copy {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .header__pic {
+        width: 575px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .header__wrapper {
+        flex-direction: column;
+    }
+    .header__offer {
+        width: auto;
+    }
+    .header__subtitle {
+        width: auto;
+    }
+    .header__pic {
+        width: 100%;
+    }
+}
+
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .item {
+        margin: 0 auto 60px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .btn {
+        width: 100%;
+    }
+    .item, .item-palm, .item-rocket {
+        width: auto;
+    }
+    .big-screen {
+        display: none;
+    }
+    .small-screen {
+        display: block;
+    }
+  
+}
